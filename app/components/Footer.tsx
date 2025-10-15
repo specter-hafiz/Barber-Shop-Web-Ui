@@ -4,46 +4,78 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="h-[200px] bg-gray-900 padding">
-      <div className="flex h-full w-full gap-20 items-center">
-        <div className="flex-1 flex gap-10 items-start">
+    <footer className="h-auto bg-gray-900 text-gray-100 padding">
+      <div className="flex flex-col sm:flex-row h-full w-full gap-10 sm:gap-20 items-start justify-between py-10">
+        <div className="flex gap-10 lg:gap-20 items-start justify-between w-full sm:w-auto">
           <div>
             <div className="pb-10">
-              <Image src="/logo.png" width={100} height={100} alt="logo" />
+              <Image
+                src="/logo.png"
+                width={100}
+                height={100}
+                alt="Company logo"
+              />
             </div>
-            <p>© All rights reserved 2025</p>
+            <p className="text-gray-400 text-sm">© All rights reserved 2025</p>
           </div>
-          <div className="flex flex-col gap-4">
-            <Link href="#about" className="hover:text-black">
+          <nav className="flex flex-col gap-4">
+            <Link href="#about" className="hover:text-golden transition-colors">
               About us
             </Link>
-            <Link href="#services" className="hover:text-black">
+            <Link
+              href="#services"
+              className="hover:text-golden transition-colors"
+            >
               Our Services
-            </Link>{" "}
-            <Link href="#faqs" className="hover:text-black">
+            </Link>
+            <Link href="#faqs" className="hover:text-golden transition-colors">
               F.A.Q
             </Link>
-          </div>
+          </nav>
         </div>
-        <div className="flex-1 flex justify-between items-start">
-          <div className="mr-10">
-            <h1 className="text-4xl">Contacts</h1>
-            <div className="flex my-4">
-              <Link href="">
-                <Phone size={22} className="mr-2 hover:text-golden" />
+        <div className="flex flex-col sm:flex-row items-start justify-between gap-6 w-full sm:w-auto">
+          <div className="flex-shrink-0">
+            <h2 className="text-xl font-semibold mb-4">Contacts</h2>
+            <div className="flex my-4 gap-2">
+              <Link href="tel:+1234567890" aria-label="Call us">
+                <Phone
+                  size={22}
+                  className="hover:text-golden transition-colors"
+                />
               </Link>
-              <Link href="">
-                <Facebook size={22} className="mr-2 hover:text-golden" />
+              <Link
+                href="https://facebook.com"
+                aria-label="Visit our Facebook page"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook
+                  size={22}
+                  className="hover:text-golden transition-colors"
+                />
               </Link>
-              <Link href="">
-                <Instagram size={22} className="mr-2 hover:text-golden" />
+              <Link
+                href="https://instagram.com"
+                aria-label="Visit our Instagram page"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram
+                  size={22}
+                  className="hover:text-golden transition-colors"
+                />
               </Link>
             </div>
-            <p>+123 456 7890</p>
-            <p>Kiyiv, Lesi Ukrainky, 5</p>
+            <p className="text-gray-300">+123 456 7890</p>
+            <p className="text-gray-300">Kyiv, Lesi Ukrainky, 5</p>
           </div>
-          <div className="w-[250px] h-[150px] relative rounded-[20px] overflow-hidden flex flex-2">
-            <Image src="/map.jpg" fill alt="map" />
+          <div className="relative w-full sm:w-[250px] h-[140px] sm:h-[150px] rounded-2xl overflow-hidden flex-shrink-0">
+            <Image
+              src="/map.jpg"
+              alt="Location map showing Lesi Ukrainky 5, Kyiv"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </div>

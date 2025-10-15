@@ -13,8 +13,6 @@
   --color-golden: #ff6123;
   --color-white: #eeeeee;
   --color-black: #101011;
-  --breakpoint-sm: 375px;
-  --breakpoint-md: 744px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,7 +28,7 @@
   }
 }
 .padding {
-  @apply sm:px-8 md:px-14 lg:px-24;
+  @apply px-6 md:px-12 lg:px-20;
 }
 body {
   background: var(--background);
