@@ -37,14 +37,14 @@ export default function About() {
               At our barbershop, we believe a great haircut is more than a
               style—
               <span className="text-golden font-semibold">
-                it's a statement
+                it&rsquo;s a statement
               </span>
               . Every visit is a chance to recharge, reconnect, and walk out
               feeling your absolute best. Our team of skilled barbers takes
               pride in precision, creativity, and the perfect blend of classic
-              and modern techniques. We've created a space where men can relax,
-              laugh, and enjoy real craftsmanship. It's not just grooming—it's a
-              ritual.
+              and modern techniques. We&rsquo;ve created a space where men can
+              relax, laugh, and enjoy real craftsmanship. It&rsquo; not just
+              grooming—it&rsquo;s a ritual.
             </p>
           </div>
         </div>
@@ -70,10 +70,11 @@ export default function About() {
                 every detail matters
               </span>
               . We value quality over speed and connection over routine. Whether
-              you're preparing for something big or just treating yourself,
-              we're here to make you look and feel sharp. Our barbers take time
-              to understand your style and deliver results you'll love. This is
-              more than a cut—it's your confidence, redefined.
+              you&rsquo;re preparing for something big or just treating
+              yourself, we&rsquo;re here to make you look and feel sharp. Our
+              barbers take time to understand your style and deliver results
+              you&rsquo;ll love. This is more than a cut—it&rsquo;s your
+              confidence, redefined.
             </p>
           </div>
 

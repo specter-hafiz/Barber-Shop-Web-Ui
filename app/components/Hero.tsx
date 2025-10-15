@@ -25,9 +25,9 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col gap-10 md:gap-16 lg:gap-20 justify-end pb-16 sm:pb-20 lg:justify-center w-full max-w-4xl">
         <div>
           <p className="max-w-md lg:max-w-2xl text-base sm:text-lg md:text-xl lg:text-2xl mb-4 text-gray-100 leading-relaxed">
-            Step into a place where precision meets personality. Whether it's a
-            fresh fade, a clean shave, or a bold new style—this is where
-            confidence begins.
+            Step into a place where precision meets personality. Whether
+            it&rsquo;s a fresh fade, a clean shave, or a bold new style—this is
+            where confidence begins.
           </p>
           <h1 className="font-judson text-5xl sm:text-6xl md:text-7xl lg:text-[100px] mb-6 leading-tight">
             BARBERSHOP
